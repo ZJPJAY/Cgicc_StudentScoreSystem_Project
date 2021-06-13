@@ -1,0 +1,54 @@
+<!DECLTYPY html>
+<head>
+	<title> Teacher Search Interface </title>
+</head>
+
+<body>
+	<form action="cgi-bin/TeacherInterface-Search.cgi" method="post"> <br>
+	
+	<input type="checkbox" name="student-id" value="Student ID" />Student ID
+	<input type="checkbox" name="score" value="Score" />Score
+	<input type="checkbox" name="total-ranking" value="Total Ranking" />Total Ranking
+	<input type="checkbox" name="credit" value="Credit" />Credit
+  	<input type="checkbox" name="dept-ranking" value="Dept Ranking" checked="checked" />Dept Ranking
+  	<br>
+
+	<select name="sort-name">
+		<option value="Student ID" selected> Student ID </option>
+		<option value="Score" selected> Score </option>
+		<option value="Total Ranking" selected> Total Ranking </option>
+		<option value="Credit" selected> Credit </option>
+		<option value="Dept Ranking" selected> Dept Ranking </option>
+	</select>
+	
+	<select name="sort-name">
+		<option value="Up to Down" selected> Up to Down </option>
+		<option value="Down to Up" selected> Down to Up </option>
+	</select>
+	
+	<input type=submit value="Search">
+	
+	<br>
+	<br>
+	<table border="1" cellpadding="10">
+		<tr>
+	      		<th>Student ID</th>
+	      		<th>Name</th>
+	      		<th>Socore</th>
+		</tr>
+		<tr>
+	      		<td>8208180408</td>
+	      		<td>JAY</td>
+	      		<td>100</td>
+		</tr>
+		<tr>
+	      		<td>8208180411</td>
+	      		<td>MXQ</td>
+	      		<td>0</td>
+		</tr>
+	</table>
+						
+	
+	</form>
+</body>
+</html>
